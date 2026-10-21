@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<title>N1十七的主页</title>
+</head>
+
+<body>
+
+<header>
+<h1>你好,我是N1十七</h1>
+<nav>
+<ul>
+<li><a href="about.html">关于我</a>
+<li><a href="work.html">作品集</a>
+<li><p>首页</p>
+</li>
+</ul>
+</nav>
+</header>
+
+<main>
+<p>我是一个二次元理工男</p>
+<img src="image/3712FD79B862A1A8AA1787F4F17ACB9D.jpg" alt="扣扣头像"/>
+<p>这是我的QQ头像
+<h2>我会：</h2>
+<ul>
+<li>使用VPN
+<li>进行简单的算法编程
+<li>打音游
+<li>使用简单的电脑美化插件</li>
+</ul>
+<p>我的作品都在<a href="https://space.bilibili.com/2039722949?spm_id_from=333.1007.0.0">我的B站主页</a>,欢迎各位查看.</p>
+</main>
+
+<footer>
+<p>QQ:756077642
+<p>我的邮箱<a href="mailto:756077642@qq.com">756077642@qq.com</a></p>
+<form action="./submit_page" method="get">
+<label for="msg">有想说的可以在这留言:</label>
+<textarea name ="msg" id ="msg" rows="2" cols="40" required></textarea>
+
+<button>发送</button>
+</form>
+
+<fieldset>
+
+<legend>可以的话，请留下联系方式</legend>
+<p>
+<select name ="email" id ="email">
+<option value="">--请选择联系方式--</option>
+<option value="qq">QQ号</option>
+<option value="wechat">微信号</option>
+<option value ="bilibili">b站号</option>
+</select>
+</p>
+<form action="./lianxi_page" method="get">
+<label for="ssemail">联系方式</label>
+<input type="text" name ="ssemail" id ="ssemail"/>
+<button>发送</button>
+
+</form>
+
+</fieldset>
+
+</footer>
+
+</body>
+</html>
