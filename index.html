@@ -2,50 +2,66 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="style.css" />
 <title>N1十七的主页</title>
 </head>
 
-<body>
+<body class="home-page">
 
-<header>
-<h1>你好,我是N1十七</h1>
-<nav>
-<ul>
+<header class="site-header">
+<h1 class="site-title">你好,我是N1十七</h1>
+<nav aria-label="主导航">
+<ul class="list">
 <li><a href="about.html">关于我</a>
 <li><a href="work.html">作品集</a>
-<li><p>首页</p>
+<li><p aria-current="page">首页</p>
 </li>
 </ul>
 </nav>
 </header>
 
-<main>
-<p>我是一个二次元理工男</p>
-<img src="image/3712FD79B862A1A8AA1787F4F17ACB9D.jpg" alt="扣扣头像"/>
-<p>这是我的QQ头像
+<main class="home-main">
+<section class="hero-section">
+<div class="hero-copy">
+<p class="lead">我是一个二次元理工男</p>
+<p class="lead">这是我的QQ头像</p>
+</div>
+<img class="profile-image" src="image/3712FD79B862A1A8AA1787F4F17ACB9D.jpg" alt="QQ头像,少女侧脸"/>
+</section>
+<section class="content-card skills-section">
 <h2>我会：</h2>
-<ul>
+<ul class="list">
 <li>使用VPN
 <li>进行简单的算法编程
 <li>打音游
 <li>使用简单的电脑美化插件</li>
 </ul>
-<p>我的作品都在<a href="https://space.bilibili.com/2039722949?spm_id_from=333.1007.0.0">我的B站主页</a>,欢迎各位查看.</p>
+</section>
+<section class="content-card works-section">
+    <h2>我的作品</h2>
+    <div class="work-gallery">
+        <img class="scorts" src="works/best.jpg" alt="最好成绩，游戏arcaea里PM一个10+铺面"/>
+        <img class="arts" src="works/test.jpg" alt="第一次临摹，铅笔风格"/>
+    </div>
+</section>
+
+<p class="lead portfolio-link">我的作品都在<a href="https://space.bilibili.com/2039722949?spm_id_from=333.1007.0.0">我的B站主页</a>,欢迎各位查看.</p>
 </main>
 
-<footer>
-<p>QQ:756077642</p>
-<p>我的邮箱<a href="mailto:756077642@qq.com">756077642@qq.com</a></p>
-<form action="./submit_page" method="get">
+<footer class="site-footer">
+<p class="list">QQ:756077642</p>
+<p class="list">我的邮箱<a href="mailto:756077642@qq.com">756077642@qq.com</a></p>
+<form class="message-form" action="./submit_page" method="get">
 <label for="msg">有想说的可以在这留言:</label>
 <textarea name ="msg" id ="msg" rows="2" cols="40" required></textarea>
 
 <button>发送</button>
 </form>
 
-<fieldset>
+<fieldset class="contact-fieldset">
 
-<legend>可以的话，请留下联系方式</legend>
+<legend class="lead">可以的话，请留下联系方式</legend>
 <p>
 <select name ="email" id ="email">
 <option value="">--请选择联系方式--</option>
@@ -54,8 +70,8 @@
 <option value ="bilibili">b站号</option>
 </select>
 </p>
-<form action="./lianxi_page" method="get">
-<label for="ssemail">联系方式</label>
+<form class="contact-form" action="./lianxi_page" method="get">
+<label class="list" for="ssemail">联系方式</label>
 <input type="text" name ="ssemail" id ="ssemail"/>
 <button>发送</button>
 

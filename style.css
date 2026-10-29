@@ -1,0 +1,25 @@
+h1{
+    color:lightseagreen;
+}
+h2{
+    color:lightseagreen;
+}
+.lead{
+    color :lightseagreen;
+}
+.list{
+    color:lightcoral;
+}
+#email{
+    color:lightcoral;
+}
+.scorts{
+    width: 520px;
+    max-width: 100%;
+    height: auto;
+}
+.arts{
+    width: 720px;
+    max-width: 100%;
+    height: auto;
+}
